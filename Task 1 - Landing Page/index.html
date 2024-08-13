@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stylish Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Stylish Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Omkar Londhe, a passionate CS Engineer. I enjoy working on innovative projects and continuously expanding my knowledge.</p>
+            <div class="contact-boxes">
+                <a href="mailto:londheomkar039@gmail.com" class="contact-box email-box">
+                    <img src="email-icon.jpeg" alt="Email Icon">
+                    <p>Email Me</p>
+                </a>
+                <a href="https://github.com/OmkarLondhe10" class="contact-box github-box" target="_blank">
+                    <img src="github.jpeg" alt="GitHub Icon">
+                    <p>GitHub</p>
+                </a>
+            </div>
+            <a href="/CV.pdf" class="cv-download" download>Download CV</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>Strong understanding of HTML for creating well-structured web pages.</p>
+                    <img src="html.jpeg" alt="HTML">
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>Proficient in CSS for creating visually appealing and responsive designs.</p>
+                    <img src="css.png" alt="CSS">
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Experience with JavaScript, and learning frameworks like React.js.</p>
+                    <img src="js.jpeg" alt="JavaScript">
+                </div>
+                <div class="skill">
+                    <h3>GitHub</h3>
+                    <p>Skilled in using Git and GitHub for version control and collaboration.</p>
+                    <img src="github.jpeg" alt="GitHub">
+                </div>
+                <div class="skill">
+                    <h3>MySQL</h3>
+                    <p>Knowledgeable in using MySQL for database management.</p>
+                    <img src="mysql.jpeg" alt="MySQL">
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <p>Proficient in Python for various programming tasks and problem solving.</p>
+                    <img src="python.jpeg" alt="Python">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Pursuing Bachelor of Science in Computer Science</h3>
+                    <p>Smt. Indira Gandhi College Of Engineer., 2022 - 2026</p>
+                    <p>GPA: - </p>
+                    <p>Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems</p>
+                </div>
+                <div class="education-item">
+                    <h3>Schooling</h3>
+                    <p>Svpt High School, 2020 Passout</p>
+                    <p>10th Board Percentage = 84%</p>
+                </div>
+                <div class="education-item">
+                    <h3>Jr.College</h3>
+                    <p>Svpt Jr.College Of Science, 2022 Passout</p>
+                    <p>12th Board Percentage = 61%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Stylish Portfolio</p>
+        </div>
+    </footer>
+
+<!--    <script src="script.js"></script> -->
+</body>
+</html>
