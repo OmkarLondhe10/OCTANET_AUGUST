@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Modal -->
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Welcome</h2>
+            <p>Please enter your name:</p>
+            <input type="text" id="user-name-input" placeholder="Enter your name">
+            <button onclick="setUserName()">Submit</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="welcome-text">Welcome to Your To-Do List</h1>
+            <div class="input-container">
+                <input type="text" id="new-task" placeholder="Enter a new task">
+                <input type="datetime-local" id="task-due-date" placeholder="Due Date and Time">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+        
+
+        <div class="sections">
+            <div class="section incomplete-tasks">
+                <h2>Incomplete Tasks</h2>
+                <ul id="incomplete">
+                </ul>
+            </div>
+            <div class="section ongoing-tasks">
+                <h2>Ongoing Tasks</h2>
+                <ul id="ongoing">
+                </ul>
+            </div>
+            <div class="section complete-tasks">
+                <h2>Complete Tasks</h2>
+                <ul id="complete">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
